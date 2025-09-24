@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import application.lista.ListaSimples;
+import application.pilha.PilhaSimples;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,6 +26,17 @@ public class Main {
         
 
         System.out.println(lista);
+
+
+        PilhaSimples pilha = new PilhaSimples(3);
+        pilha.empilhar("Primeiro Elemento");
+        pilha.empilhar("Segundo Elemento");
+
+        System.out.println(pilha.desempihar());
+        pilha.empilhar("Terceiro Elemento");
+        System.out.println(pilha.desempihar());
+        System.out.println(pilha.desempihar());
+        System.out.println(pilha.desempihar());
     }
 }
 
